@@ -27,7 +27,7 @@ namespace budget_accounting.Class
                 StatusMoney = false;
             }
         }
-        public string Name_Note
+        public string nameNote
         {
             get { return NameNote; }
             set { NameNote = value; }
