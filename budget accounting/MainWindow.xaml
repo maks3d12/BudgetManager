@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
         
         
-        <DatePicker x:Name="DatePick" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <DatePicker x:Name="DatePick" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Grid.ColumnSpan="2" SelectedDateChanged="DatePick_SelectedDateChanged"/>
         <DataGrid x:Name="DataGridMenu"  Grid.Column="0" Grid.Row="1"  Grid.RowSpan="3" SelectionChanged="DataGrid_DataChange" AutoGeneratingColumn="DataGrid_AutoGeneratingColumn"/> 
             
        

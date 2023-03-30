@@ -34,7 +34,6 @@ namespace budget_accounting
         private void ShowNotes()
         {
             NoteFromDataGrid = new List<Note>();
-            DataGridMenu.ItemsSource = null; // это обязательная часть, почему то если убрать этот null то таблица не будет обнавляться автоматически. 
             foreach (Note note in notes)
             {
                 if (DatePick.Text == note.date)
@@ -159,6 +158,11 @@ namespace budget_accounting
                 double cash = ((Note)DataGridMenu.SelectedItem).money;
                 summ_money.Text = Convert.ToString(cash);
             }
+        }
+
+        private void DatePick_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ShowNotes();
         }
     }
 }
